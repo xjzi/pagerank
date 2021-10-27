@@ -21,11 +21,11 @@ The project is not complete.
 According to the MediaWiki User-Agent Policy, "Scripts should use an informative User-Agent string with contact information, or they may be blocked without notice."
 Any contact information in `contact.txt` will be included in the User-Agent header when querying the Wikipedia API.
 ```
-echo -n "example@wikipedia.org" >> contact.txt
+echo -n "example@wikipedia.org" > contact.txt
 ```
 Make sure you have `libcurl` and `rapidjson` installed.
 ```
-g++ main.rs -lcurl && ./a.out
+g++ main.cpp -lcurl && ./a.out "C++"
 ```
 The project is not complete, so the output is probably debug information.
 
